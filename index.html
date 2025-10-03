@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/club-social-logo.ico" type="image/x-icon">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurante Club Social</title>
+</head>
+<body>
+      <nav class="navbar " role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <!-- Nombre del restaurante -->
+            <a class="navbar-item" href="#">
+                <img src="./img/club-social-logo.png" alt="Logo Restaurante Club Social Rufino" class="logo">
+                Club Social Rufino
+            </a>
+
+            <!-- Botón burger -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+            <div id="menuPrincipal" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item px-5" href="#menu">Menú</a>
+                    <a class="navbar-item px-5" href="#nosotros">Nosotros</a>
+                    <a class="navbar-item px-5" href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+        <script>
+            // Script para activar el burger en mobile
+            document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById(burger.dataset.target);
+
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+            });
+        </script>
+    <section class="hero is-halfheight ">
+    <div class="hero-body s-1">
+        <div class="section-1">
+            <img src="./img/club-social-logo.png" alt="Logo Restaurante Club Social Rufino" class="logo">
+            <p class="subtitle">Cobo 215, Rufino, Santa Fe</p>
+            <p class="title">Bienvenido a tu lugar Favorito</p>
+            <a href="https://wa.me/5493382448815" class="cta-1" target="_blank">
+                Pedidos y reservas
+            </a>
+            <div class="buttons is-centered">
+            <a class="button is-dark is-medium" href="https://www.facebook.com/clubsocialrufino" target="_blank">
+                <span class="icon is-small">
+                <i class="fab fa-facebook-f"></i>
+                </span>
+            </a>
+            <a class="button is-dark is-medium" href="https://www.instagram.com/clubsocialrufino" target="_blank">
+                <span class="icon is-small">
+                <i class="fab fa-instagram"></i>
+                </span>
+            </a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="columns">
+        <div class="column section-2" id="menu">
+            <p class="subtitle">Nuestros Platos</p>
+            <p class="title">Todo lo que te gusta en un mismo lugar</p>
+            <a href="https://club-social-6.ola.click/products" target="_blank" class="cta-2">Menú Online</a>
+             
+        </div>
+    </section>
+    <section class="columns is-multiline is-mobile">
+        <div class="column is-one-quarter-desktop is-half-mobile foto f1">
+        </div>
+        <div class="column is-one-quarter-desktop is-half-mobile  foto f2">
+        </div>
+        <div class="column is-one-quarter-desktop is-half-mobile  foto f3">
+        </div>
+        <div class="column is-one-quarter-desktop is-half-mobile  foto f4">
+        </div>
+    </section>
+    <section class="columns">
+        <div class="column section-3" id="nosotros">
+            <p class="subtitle">Sobre Nosotros</p>
+            <p class="title" >Más de 25 años junto a vos</p>
+            <p class="historia">La Confitería del Club Social nació a finales de la década de 1960 gracias al esfuerzo
+incansable de un grupo de personas que compartían un objetivo en común: crear un
+club cálido y acogedor, tal como lo es el Club Social.
+A 30 años de que abriera sus puertas, siendo nuevos en la ciudad y con poca
+experiencia en el rubro, nos hallamos en el desafío de iniciar un período de
+conseción que se extendió hasta el año 2009.
+Allí emprendimos nuevos rumbos y enfrentamos múltiples retos, pero siempre con
+el mismo objetivo: ofrecer una experiencia gratificante a cada rufinense y a todas
+aquellas personas que en su paso por la ciudad eligieran visitarnos.
+Fue en el año 2015 que volvimos a encontrarnos en esta esquina tan emblemática de
+la ciudad. Colmada de historias y testigo de tantas vidas que dieron pasos en ella, la
+eligieron como segunda casa y la proclamaron como punto de encuentro, ya sea
+para compartir alegrías, festejos y antojos, o simplemente un café en la vereda.
+La verdad es que en 26 años pasaron muchas cosas, sin embargo hay algo que no
+cambia: queremos que te sientas como en casa, es por eso que seguimos
+comprometidos a mantener la calidad y calidez que buscamos que nos caractericen,
+para que cada vez que nos visites tengas una experiencia especial y sólo te dediques
+a disfrutarla.
+Gracias a nuestros clientes por elegirnos, acompañarnos en cada etapa y por ser
+parte esencial de nuestros días.
+Y, por supuesto, agradecemos a nuestro equipo que día tras día da lo mejor de sí,
+incluso en aquellos momentos en los que tal vez preferirían estar del otro lado del
+mostrador, o del delantal.
+            </p>
+            <p style="font-size: 1.5rem; line-height: 1.5; color: white;">
+  Comprometidos en brindarte 
+  <span style="font-weight: bold; font-family: 'Arial', sans-serif;">Sabor</span>, 
+  calidad y 
+  <span style="font-family: 'Dancing Script', cursive;">calidez</span>.
+</p>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </section>
+    <section class="columns is-multiline is-mobile">
+        <div class="column is-one-quarter-desktop is-half-mobile foto f5">
+        </div>
+        <div class="column is-one-quarter-desktop is-half-mobile  foto f6">
+        </div>
+        <div class="column is-one-quarter-desktop is-half-mobile  foto f7">
+        </div>
+        <div class="column is-one-quarter-desktop is-half-mobile  foto f8">
+        </div>
+    </section>
+    <section class="columns is-multiline is-mobile section-4">
+        <div class="column is-half-desktop is-full-mobile map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.4081676382675!2d-62.71403922354438!3d-34.26364243961929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c60fb690faa9e3%3A0x67afb95c9653c929!2sRestaurante%20Club%20Social%20Rufino!5e0!3m2!1ses!2sar!4v1759519510706!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+    <footer class="columns mb-0">
+        <div class="column footer" id="contacto">
+            <img src="./img/club-social-logo-2.png" alt="Logo Restaurante Club Social Rufino" class="logo-footer">
+            <p class="subtitle">Encontranos en</p>
+            <p class="title">Cobo 215, Rufino, SF, Argentina</p>
+            <p class="subtitle">Contacto</p>
+            <p class="title">
+                <a href="tel:+5493382448815" style="color: white;">
+                    +54 9 (3382) 448815
+                </a>
+            </p>
+            <div class="redes">
+
+            </div>
+            <div class="ur">
+                © 2025 Club Social Confitería. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+        <a href="https://wa.me/5493382448815" class="btn-whatsapp" target="_blank">
+     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <path fill="white" d="M34.7 27.6c-.6-.3-3.5-1.7-4-1.9-.5-.2-.9-.3-1.3.3-.4.6-1.5 1.9-1.8 2.2-.3.3-.7.4-1.3.1-.6-.3-2.5-.9-4.8-3-1.8-1.6-3-3.6-3.3-4.2-.3-.6 0-.9.2-1.2.2-.2.6-.7.8-1 .3-.3.4-.6.6-1 .2-.4.1-.8 0-1.1-.1-.3-1.3-3.1-1.8-4.2-.5-1.1-1-1-1.3-1.1h-1.1c-.4 0-1.1.2-1.6.7-.5.5-2.1 2-2.1 4.8s2.2 5.6 2.5 6c.3.4 4.3 6.6 10.4 9.2 1.5.6 2.7 1 3.6 1.3 1.5.5 2.9.4 4 .2 1.2-.2 3.5-1.4 4-2.7.5-1.3.5-2.4.3-2.7-.2-.3-.5-.4-1.1-.7z"/>
+  <path fill="white" d="M24 4C12.9 4 4 12.9 4 24c0 4.2 1.3 8.1 3.5 11.3L4 44l9-3.5C16 42.7 19.9 44 24 44c11.1 0 20-8.9 20-20S35.1 4 24 4zm0 36c-3.5 0-6.9-1.1-9.7-3.1l-.7-.5-5.4 2.1 2-5.6-.4-.6C8.5 30.4 7.4 27.3 7.4 24c0-9.1 7.4-16.6 16.6-16.6S40.6 14.9 40.6 24 33.1 40 24 40z"/>
+
+</svg>
+    </a>
+</body>
+</html>

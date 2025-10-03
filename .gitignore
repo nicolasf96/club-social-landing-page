@@ -1,0 +1,9 @@
+# Cachés
+.sass-cache/
+.cache/
+
+# Mapas (opcional)
+*.map
+
+# node_modules
+node_modules/
